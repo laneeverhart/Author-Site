@@ -2,10 +2,10 @@
 	margin: 0;
 	padding: 0;
 }
+
 html body {
 	background-color: #87CEFA;
 	height: 100%;
-	font-size: 16px;
 	margin: 1%;
 }
 @font-face {
@@ -14,112 +14,84 @@ html body {
 }
 
 
-.top{
-	display: grid;
-	grid-template-columns: 2% 1fr 1fr 2%;
-	grid-gap: 2rem;
-	grid-template-areas: 
-	". headline paint ."
-	". reypic reypara .";
-}
-.Paint{
-	grid-area: paint;
-	height: 30rem;
-	width: 40rem;
-
-
-}
-.Paint img {
-	height: 30rem;
-	width: 40rem;
-	
-}
-
-.headline {
-	font-size: 6rem;
+h1 {
+	font-size: 15vw;
 	font-family: deftone;
 	color: yellow;
 	-webkit-text-stroke: .1rem red;
-	margin-right: .4rem;
+	margin: 0px auto 1vh auto;
+	width: 100%;
 	display: block;
-	grid-area: headline;
 }
 
+.georgePaint {
+	width: 60vw;
+	margin: 5vh auto;
+	display: block;
+}
 
+.rey {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+}
 .reyPicture {
-	height: 40rem;
-	width: 40rem;
-	grid-area: reypic;
+	width: 50vw;
 }
-
-.reyPicture img {
-	height: 40rem;
-	width: 40rem;
-}
-
-
 
 .reyPara {
-	font-size: 2rem;
-	font-family: "lato";
-	grid-area: reypara;
+	font-size: 2.5vw;
 }
 
-
-
-.mid{
-	margin-top: 1%;
+.mid {
 	display: grid;
-	grid-template-columns: 2% 1fr 1fr 1fr 2%;
-	grid-gap: 2rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	margin-top: 10vh;
 	grid-template-areas: 
-	". oldpic kitepic museumpic ."
-	". oldpara kitepara museumpara ."
-}
-.oldPicture {
-	grid-area: oldpic;
-	justify-self: center;
-}
-.kitePicture {
-	grid-area: kitepic;
-	justify-self: center;
-}
-.museumPicture{
-	grid-area: museumpic;
-	justify-self: center;
-}
-.oldPicture  img {
-	height: 18rem;
-	width: 18rem;
-}
-.kitePicture  img{
-	height: 18rem;
-	width: 18rem;
-}
-.museumPicture img{
-	height: 18rem;
-	width: 18rem;
-}
-.oldPara {
-  grid-area: oldpara;
-  font-family: lato;
-}
-.kitePara {
-  grid-area: kitepara;	
-font-family: lato;
-}
-.museumPara {
-	grid-area: museumpara;
-	font-family: lato;
-}
-footer {
-	margin-top: 5%;
-	background-color: red;
-	height: 2rem;
-	padding: 2rem;
-	text-align: center;
-	font-family: deftone;
-	font-size: 1.5em;
-	width: 98vw;
+	"oldPicture kitePicture museumPicture"
+	"oldPara kitePara museumPara"
 }
 
+.oldPicture {
+	grid-area: oldPicture;
+	width: 32vw;
+	height: 64vh;
+}
+
+.kitePicture {
+	grid-area: kitePicture;
+	width: 32vw;
+	height: 64vh;
+}
+
+.museumPicture {
+	grid-area: museumPicture;
+	width: 32vw;
+	height: 64vh;
+}
+
+.oldPara {
+	grid-area: oldPara;
+	font-size: 2vw;
+}
+
+.kitePara {
+	grid-area: kitePara;
+	font-size: 2vw;
+}
+
+.museumPara {
+	grid-area: museumPara;
+	font-size: 2vw;
+}
+
+footer {
+	width: 100%;
+	height: 8vh;
+	background-color: red;
+	text-align: center;
+	font-size: 6vh;
+	color: yellow;
+	font-family: deftone;
+}
